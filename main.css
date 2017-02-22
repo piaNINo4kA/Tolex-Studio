@@ -1,0 +1,75 @@
+ul.dropdown li { position: relative; }
+ ul.dropdown,
+ ul.dropdown-inside {
+ list-style-type: none;
+ padding: 0;
+ }
+ ul.dropdown-inside {
+ position: absolute;
+ left: -9999px;
+ }
+ ul.dropdown li.dropdown-top {
+ display: inline;
+ float: left;
+ margin: 0 1px 0 0;
+ }
+ ul.dropdown li.dropdown-top a {
+ padding: 3px 10px 4px;
+ display: block;
+ }
+ ul.dropdown a.dropdown-top { background: #efefef; }
+ ul.dropdown a.dropdown-top:hover { padding: 2px 10px 5px; }
+ ul.dropdown li.dropdown-top:hover .dropdown-inside {
+ display: block;
+ left: 0;
+ }
+ ul.dropdown .dropdown-inside { background: #fff; }
+ ul.dropdown .dropdown-inside a:hover { background: #efefef; }
+
+   ul.main_menu {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+   ul.main_menu li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+   }
+
+.callback {
+	color: white;
+}
+
+
+
+/*xs*/
+
+ul.dropdown-xs li { position: relative; }
+ ul.dropdown-xs,
+ ul.dropdown-inside-xs {
+ list-style-type: none;
+ padding: 0;
+ }
+ ul.dropdown-inside-xs {
+ position: absolute;
+ left: -9999px;
+ }
+ ul.dropdown-xs li.dropdown-top-xs {
+ display: inline;
+ float: left;
+ margin: 0 1px 0 0;
+ }
+ ul.dropdown-xs li.dropdown-top-xs a {
+ padding: 3px 10px 4px;
+ display: block;
+ }
+ ul.dropdown-xs a.dropdown-top-xs { background: #efefef; }
+ ul.dropdown-xs a.dropdown-top-xs:hover { padding: 2px 10px 5px; }
+ ul.dropdown-xs li.dropdown-top-xs:hover .dropdown-inside-xs {
+ display: block;
+ left: 0;
+ }
+ ul.dropdown-xs .dropdown-inside-xs { background: #fff; }
+ ul.dropdown-xs .dropdown-inside-xs a:hover { background: #efefef; }
+/*xs-end*/
